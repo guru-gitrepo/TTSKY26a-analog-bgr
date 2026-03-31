@@ -59,6 +59,13 @@ The design has been fully verified through:
 * Post-layout verified
 * Tiny Tapeout integration ready
 
+## Results Summary
+- VREF ≈ 0.9V
+- Temp coefficient: ~20–40 ppm/°C
+- Line regulation: ~2%
+- Post-layout (RCX) verified
+- Robust startup across corners
+
 ## Author
 
 Guruprasad
