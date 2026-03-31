@@ -1,36 +1,65 @@
-![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
+# Sky130 Bandgap Reference (Tiny Tapeout Compatible)
 
-# Tiny Tapeout Analog Project Template
+## Overview
 
-- [Read the documentation for project](docs/info.md)
+This project implements a **bandgap reference (BGR)** in the Sky130 process, designed to generate a stable voltage of approximately **0.9V** across process, voltage, and temperature variations.
 
-## What is Tiny Tapeout?
+The design has been fully verified through:
 
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
+* Pre-layout simulation
+* Post-layout (RCX) simulation
+* LVS and DRC checks
 
-To learn more and get started, visit https://tinytapeout.com.
+## Key Specifications
 
-## Analog projects
+* Technology: Sky130 (1.8V)
+* Output Voltage: ~0.9V
+* Area: 63.7 µm × 47.6 µm
+* Architecture: PMOS-based LDO-compatible BGR core
+* Layout: Fully custom, matched devices
 
-For specifications and instructions, see the [analog specs page](https://tinytapeout.com/specs/analog/).
+## Interface (Tiny Tapeout)
 
-## Enable GitHub actions to build the results page
+| Pin     | Type           | Description         |
+| ------- | -------------- | ------------------- |
+| `ua[0]` | Analog Output  | VREF (~0.9V)        |
+| `ui[0]` | Digital Input  | Enable (EN)         |
+| `uo[0]` | Digital Output | Status (BGR active) |
+| `vccd1` | Power          | 1.8V supply         |
+| `vssd1` | Ground         | Ground              |
 
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
+## Notes on Analog Output
 
-## Resources
+* VREF is exposed as an **analog output**
+* The output is **not buffered**
+* External loading may affect voltage accuracy
+* Measurement should be done using **high-impedance instrumentation**
+* Tiny Tapeout IO pads are digital-oriented; analog performance is not guaranteed
 
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
+## Design Flow
 
-## What next?
+1. Schematic design (xschem)
+2. Layout implementation (magic)
+3. LVS verification (netgen)
+4. Parasitic extraction (RCX)
+5. Post-layout simulation (ngspice)
+6. GDS export for fabrication
 
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@tinytapeout](https://twitter.com/tinytapeout)
-  - Bluesky [@tinytapeout.com](https://bsky.app/profile/tinytapeout.com)
+## Repository Structure
+
+* `gds/` → Final layout (GDS)
+* `mag/` → Magic layout files
+* `spice/` → Post-layout extracted netlist
+* `src/` → Tiny Tapeout wrapper (Verilog)
+* `docs/` → Design documentation
+
+## Status
+
+* Layout complete
+* Post-layout verified
+* Tiny Tapeout integration ready
+
+## Author
+
+Guruprasad
+
