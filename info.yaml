@@ -23,7 +23,10 @@
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
-pinout:
+ analog:
+  outputs:
+    - ua[0]
+ pinout:
   # Inputs
   ui[0]: "EN (enable)"
   ui[1]: "unused"
@@ -35,7 +38,7 @@ pinout:
   ui[7]: "unused"
 
   # Outputs
-  uo[0]: "bgr_ok"
+  uo[0]: ""
   uo[1]: ""
   uo[2]: ""
   uo[3]: ""
@@ -55,7 +58,7 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: "VREF (~ 0.9 Analog output)"
+  ua[0]: "VREF (0.9 Analog output)"
   ua[1]: ""
   ua[2]: ""
   ua[3]: ""
