@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1774871616
+timestamp 1774937322
 << nwell >>
 rect 8460 7926 12020 8156
 rect 8460 7916 11700 7926
@@ -1334,19 +1334,19 @@ rect 4008 2583 4060 2639
 rect 780 2521 1050 2546
 rect 2270 2541 2550 2546
 rect 3760 2536 4060 2583
-use inv  inv_0
+use inv  inv_0 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 8334 0 1 7866
 box 456 -1240 950 70
-use sky130_fd_pr__pfet_01v8_lvt_RYXLVW  M1
+use sky130_fd_pr__pfet_01v8_lvt_RYXLVW  M1 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 2168 0 1 8597
 box -2141 -684 2141 684
-use sky130_fd_pr__pfet_01v8_lvt_RGDUVW  M2
+use sky130_fd_pr__pfet_01v8_lvt_RGDUVW  M2 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 6378 0 1 8597
 box -2141 -684 2141 684
-use sky130_fd_pr__nfet_01v8_lvt_N53P9Z  M3
+use sky130_fd_pr__nfet_01v8_lvt_N53P9Z  M3 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 2168 0 1 7062
 box -2131 -669 2131 669
@@ -1354,15 +1354,15 @@ use sky130_fd_pr__nfet_01v8_lvt_N53P9Z  M4
 timestamp 1774869637
 transform 1 0 6348 0 1 7062
 box -2131 -669 2131 669
-use sky130_fd_pr__pfet_01v8_Y4HTW8  ME1
+use sky130_fd_pr__pfet_01v8_Y4HTW8  ME1 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 9493 0 1 7587
 box -296 -304 296 304
-use sky130_fd_pr__nfet_01v8_5TSK7N  ME2
+use sky130_fd_pr__nfet_01v8_5TSK7N  ME2 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 10853 0 1 6942
 box -216 -269 216 269
-use sky130_fd_pr__nfet_01v8_TG3PBY  ME3
+use sky130_fd_pr__nfet_01v8_TG3PBY  ME3 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 9756 0 1 6885
 box -236 -219 236 219
@@ -1370,15 +1370,15 @@ use sky130_fd_pr__pfet_01v8_Y4HTW8  ME4
 timestamp 1774869637
 transform 1 0 10005 0 1 7587
 box -296 -304 296 304
-use sky130_fd_pr__nfet_01v8_K3R7XR  MSU1
+use sky130_fd_pr__nfet_01v8_K3R7XR  MSU1 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 10326 0 1 6935
 box -386 -269 386 269
-use sky130_fd_pr__pfet_01v8_WS5ADW  MSU2
+use sky130_fd_pr__pfet_01v8_WS5ADW  MSU2 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 11303 0 1 7587
 box -396 -284 396 284
-use sky130_fd_pr__nfet_01v8_WPLAKU  MSU3
+use sky130_fd_pr__nfet_01v8_WPLAKU  MSU3 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 11188 0 1 6952
 box -201 -219 201 219
@@ -1386,19 +1386,19 @@ use sky130_fd_pr__pfet_01v8_WS5ADW  MSU4
 timestamp 1774869637
 transform 1 0 10616 0 1 7590
 box -396 -284 396 284
-use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  Q1
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  Q1 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 1730 0 1 3396
 box 0 0 1340 1340
-use RCTAT_lay  RCTAT_lay_0
+use RCTAT_lay  RCTAT_lay_0 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 3310 0 1 -2924
 box -1176 2924 -154 4936
-use RL_lay  RL_lay_0
+use RL_lay  RL_lay_0 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 11970 0 1 6036
 box -176 -256 646 1836
-use RPTAT_lay  RPTAT_lay_0
+use RPTAT_lay  RPTAT_lay_0 ~/sky130_bgr/magic/BGR
 timestamp 1774869637
 transform 1 0 2063 0 1 329
 box -253 -103 129 1681
@@ -1425,12 +1425,13 @@ timestamp 1774869637
 transform 1 0 3220 0 1 3406
 box 0 0 1340 1340
 << labels >>
-flabel metal2 s 12270 9196 12680 9516 0 FreeSans 4000 0 0 0 VIN
-port 1 nsew
-flabel locali s 6110 5596 6520 5916 0 FreeSans 4000 0 0 0 VSS
-port 2 nsew
-flabel metal2 s 12430 7696 12730 7996 0 FreeSans 4000 0 0 0 VREF
-port 3 nsew
-flabel metal2 s 12520 6356 12720 6556 0 FreeSans 4000 0 0 0 EN
-port 4 nsew
+flabel metal2 s 12180 9150 12780 9600 0 FreeSans 4000 0 0 0 vccd1
+flabel metal2 s 12270 9196 12680 9516 0 FreeSans 4000 0 0 0 vccd1
+port 1 nsew power bidirectional
+flabel metal2 s 6110 5596 6520 5916 0 FreeSans 4000 0 0 0 vssd1
+port 1 nsew ground bidirectional
+flabel metal2 s 12430 7696 12730 7996 0 FreeSans 4000 0 0 0 ua[0]
+port 1 nsew signal output
+flabel metal2 s 12520 6356 12720 6556 0 FreeSans 4000 0 0 0 ui[0]
+port 1 nsew signal input
 << end >>
