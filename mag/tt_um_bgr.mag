@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1775465099
+timestamp 1775468141
 << metal3 >>
 rect 27630 34730 27640 34840
 rect 27740 34730 27750 34840
@@ -98,7 +98,7 @@ rect 26498 0 26678 200
 rect 30360 140 30542 200
 rect 30362 0 30542 140
 use bgr_core  bgr_core_0
-timestamp 1775464974
+timestamp 1775467836
 transform 1 0 14440 0 1 19900
 box 0 -30 13200 9526
 << labels >>
