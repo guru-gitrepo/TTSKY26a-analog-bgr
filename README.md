@@ -1,4 +1,4 @@
-# Sky130 Bandgap Reference (Tiny Tapeout Compatible)
+# Sky130 Bandgap Reference   (Tiny Tapeout Compatible)
 
 ## Overview
 
