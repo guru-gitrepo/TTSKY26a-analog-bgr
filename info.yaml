@@ -19,7 +19,7 @@ project:
 
   # List your project's source files here.
   source_files:        
-    - "src/project.v"
+    - "project.v"
 
 # The pinout of your project.
 analog:
