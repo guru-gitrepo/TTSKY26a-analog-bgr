@@ -8,6 +8,8 @@ module tt_um_bgr (
     input        clk,
     input        rst_n,
     output [7:0] ua
+    input        VGND,
+    input        VDPWR
 );
 
     // Enable signal
