@@ -7,7 +7,7 @@ module tt_um_bgr (
     inout  [7:0] uio,
     input        clk,
     input        rst_n,
-    output [7:0] ua
+    output [7:0] ua,
     input        VGND,
     input        VDPWR
 );
