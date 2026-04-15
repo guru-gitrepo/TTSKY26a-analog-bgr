@@ -1,24 +1,44 @@
+
+`timescale 1ns/1ps
+
 module tb;
 
-    reg ena;
+    reg  [7:0] ui_in;
     wire [7:0] uo_out;
+    wire [7:0] uio;
+    reg        clk;
+    reg        rst_n;
+    wire [7:0] ua;
 
+    // DUT
     tt_um_bgr dut (
-        .ui_in(8'b0),
+        .ui_in(ui_in),
         .uo_out(uo_out),
-        .uio(),
-        .ena(ena),
-        .clk(0),
-        .rst_n(1)
+        .uio(uio),
+        .clk(clk),
+        .rst_n(rst_n),
+        .ua(ua)
     );
 
     initial begin
-        ena = 0;
+        // Init
+        ui_in = 8'b0;
+        clk = 0;
+        rst_n = 0;
+
+        #10 rst_n = 1;
+
+        // Enable BGR
+        ui_in[0] = 1;
+
         #50;
-        ena = 1;
+
+        $display("ua[0] = %b", ua[0]);
+
         #50;
-        $display("uo_out = %b", uo_out);
         $finish;
     end
+
+    always #5 clk = ~clk;
 
 endmodule
