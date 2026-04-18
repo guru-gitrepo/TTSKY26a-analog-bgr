@@ -99,7 +99,6 @@ MACRO tt_um_bgr
   PIN ui_in[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 3.950000 ;
     PORT
       LAYER met4 ;
         RECT 138.310 224.760 138.610 225.760 ;
@@ -443,7 +442,7 @@ MACRO tt_um_bgr
       LAYER met2 ;
         RECT 72.250 101.150 138.200 147.130 ;
       LAYER met3 ;
-        RECT 47.900 112.105 138.750 174.200 ;
+        RECT 47.900 112.105 135.900 160.550 ;
       LAYER met4 ;
         RECT 40.850 224.360 41.310 225.650 ;
         RECT 42.410 224.360 44.070 225.650 ;

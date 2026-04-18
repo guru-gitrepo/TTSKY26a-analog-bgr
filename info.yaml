@@ -28,7 +28,7 @@ analog:
 
 pinout:
   # Inputs
-  ui[0]: "EN (enable)"
+  ui[0]: "unused"
   ui[1]: "unused"
   ui[2]: "unused"
   ui[3]: "unused"

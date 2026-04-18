@@ -28,11 +28,6 @@ module tb;
 
         #10 rst_n = 1;
 
-        // Enable BGR
-        ui_in[0] = 1;
-
-        #50;
-
         $display("ua[0] = %b", ua[0]);
 
         #50;

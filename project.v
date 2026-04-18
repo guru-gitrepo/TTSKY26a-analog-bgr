@@ -12,9 +12,6 @@ module tt_um_bgr (
     input        VDPWR
 );
 
-    // Enable signal
-    wire en = ui_in[0];
-
     // --- Analog placeholder ---
     // Since CI is digital-only, we just drive a dummy value
 
