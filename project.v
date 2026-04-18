@@ -15,8 +15,7 @@ module tt_um_bgr (
     // --- Analog placeholder ---
     // Since CI is digital-only, we just drive a dummy value
 
-    assign ua[0] = en;   // simple toggle for simulation
-    assign ua[7:1] = 7'b0;
+    assign ua[7:0] = 8'b0;
 
     // No digital outputs
     assign uo_out = 8'b0;
