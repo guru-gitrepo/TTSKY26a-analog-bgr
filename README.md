@@ -23,10 +23,8 @@ The design has been fully verified through:
 | Pin     | Type           | Description         |
 | ------- | -------------- | ------------------- |
 | `ua[0]` | Analog Output  | VREF (~0.9V)        |
-| `ui[0]` | Digital Input  | Enable (EN)         |
-| `uo[0]` | Digital Output | Status (BGR active) |
-| `vccd1` | Power          | 1.8V supply         |
-| `vssd1` | Ground         | Ground              |
+| `VDPWR` | Power          | 1.8V supply         |
+| `VGND`  | Ground         | Ground              |
 
 ## Notes on Analog Output
 

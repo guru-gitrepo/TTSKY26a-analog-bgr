@@ -26,8 +26,6 @@ These components combine to produce a temperature-independent reference voltage.
 ## Tiny Tapeout Integration
 
 * VREF is exposed via `ua[0]` (analog output)
-* EN control via `ui[0]`
-* Status via `uo_out[0]`
 
 ## Notes
 

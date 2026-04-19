@@ -35,7 +35,7 @@
     |VIN        |   metal2                  |
     |VSS	    |   metal2                  |
     |VREF       |metal2 (or metal1 if local)|
-    |   EN      |	metal2                  |                                              
+
 - Since our currents are around 3–7 µA, use:
 
     |Net Type               |	Recommended Width|
