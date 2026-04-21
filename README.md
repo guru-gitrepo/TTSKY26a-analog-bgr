@@ -66,5 +66,14 @@ The design has been fully verified through:
 
 ## Author
 
-Guruprasad
+Guruprasad, Design Engineer, KarMic Design Private Limited, Manipal 576104
 
+Mentor : Mr. Raghavendra Hebbar, Senior Design Engineer
+
+## Sponsorship
+
+KarMic Design Private Limited, 
+
+Manipal 576104,
+
+Karnataka, INDIA
