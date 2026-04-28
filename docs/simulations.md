@@ -30,7 +30,7 @@ Below table shows the corners used for simulations.
 ## Monte-Carlo Simulation
 The histogram plot is shown below. Totally 500 samples were considered.
 
-![Histplot](../figures/MC_plot.svg)
+![Histplot](MC_plot.svg)
 
 ## Result table
 |    Parameter      |    Min   |  Nominal |    Max   |  Unit  |         Remarks        |
