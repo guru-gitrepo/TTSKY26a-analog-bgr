@@ -10,7 +10,7 @@ module tt_um_bgr (
     input        clk,      // clock
     input        rst_n,    // reset_n - low to reset
     input        ena,      // enable - maintain 1 to keep the design active
-    output [7:0] ua,       // Analog pins 
+    inout  [7:0] ua,       // Analog pins 
     input        VGND,     // Ground
     input        VDPWR     // Power
 );
@@ -19,6 +19,6 @@ module tt_um_bgr (
     assign uo_out = 8'b0; 
     assign uio_out = 8'b0; 
     assign uio_oe  = 8'b0; // Set all as inputs to be safe 
-    assign ua = 8'b0; 
+    assign ua = 8'bz; 
 
 endmodule
