@@ -36,7 +36,7 @@ $$I_3=7\mu A,\ n=8,\ R_{PTAT}=18.29k\Omega ,\ R_{CTAT}=139.86k\Omega ,\ R_L=95.5
 Since the circuit has two operating points, a startup circuit is required. The following figure 
 shows the final schematic of BGR.
 
-![BGR](../figures/BGR.svg)
+![BGR](BGR.svg)
 
 MOSFETS form $M_1$ to $M_4$ forms a classic beta multiplier. Totally, there are
 three main current branches. First one ( $I_1$ ) is $M_1$ , $M_3$ and $Q_1$ . The second one has two sub branches 1. $M_2$ , 
