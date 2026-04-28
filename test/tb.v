@@ -8,6 +8,7 @@ module tb;
     wire [7:0] uio;
     reg        clk;
     reg        rst_n;
+    reg	       ena;
     wire [7:0] ua;
 
     // DUT
@@ -17,6 +18,7 @@ module tb;
         .uio(uio),
         .clk(clk),
         .rst_n(rst_n),
+	.ena(ena),
         .ua(ua)
     );
 
@@ -25,7 +27,7 @@ module tb;
         ui_in = 8'b0;
         clk = 0;
         rst_n = 0;
-
+        ena=1;
         #10 rst_n = 1;
 
         $display("ua[0] = %b", ua[0]);
