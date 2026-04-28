@@ -30,7 +30,7 @@ module tb;
         .clk     (clk),
         .rst_n   (rst_n),
         .ena     (ena),
-        .ua      (ua),
+        .ua      (ua)
     );
 
     initial begin

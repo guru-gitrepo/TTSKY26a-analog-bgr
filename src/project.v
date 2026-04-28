@@ -16,9 +16,9 @@ module tt_um_bgr (
 );
 
     // Dummy assignments for digital satisfaction
-    assign uo_out = 8'b0; [cite: 1]
-    assign uio_out = 8'b0; [cite: 1]
+    assign uo_out = 8'b0; 
+    assign uio_out = 8'b0;
     assign uio_oe  = 8'b0; // Set all as inputs to be safe 
-    assign ua = 8'b0; [cite: 1]
+    assign ua = 8'b0;
 
 endmodule
