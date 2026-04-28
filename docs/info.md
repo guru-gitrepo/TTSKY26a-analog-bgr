@@ -5,7 +5,7 @@ This project implements a **bandgap reference (BGR)** in the Sky130 process to g
 ## Architecture
 The below figure shows conceptual block diagram of BGR.
 
-![block](../figures/bgr_block.svg)
+![block](bgr_block.svg)
 
 The design consists of:
 
