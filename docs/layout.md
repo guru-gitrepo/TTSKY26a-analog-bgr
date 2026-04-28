@@ -48,5 +48,5 @@
 
 The layout of the BGR is shown below. Area occupied is $1921\ \mu m^2$.
 
-![Layout](../figures/BGR_layout.png)
+![Layout](BGR_layout.png)
 
